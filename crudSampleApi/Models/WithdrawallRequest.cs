@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CsharpHandlers
+namespace CsharpHandlers.Models
 {
-    public class CrudSampleHandler
+    class WithdrawallRequest
     {
-
     }
 }
