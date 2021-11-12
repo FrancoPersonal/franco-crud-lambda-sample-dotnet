@@ -1,0 +1,10 @@
+<Project>
+  <Import Project="../build/dependencies.props" />
+  <PropertyGroup Label="Package information">
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/FrancoPersonal/crud-lambda-sample-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FrancoPersonal/crud-lambda-sample-dotnet</RepositoryUrl>
+    <Authors>autor</Authors>
+    <Company>company</Company>
+  </PropertyGroup>
+</Project>

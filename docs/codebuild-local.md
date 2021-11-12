@@ -22,8 +22,11 @@ docker build -t aws/codebuild/standard:5.0 .
 
 ``` batch
 # in repo folder src
-wget https://raw.githubusercontent.com/aws/aws-codebuild-docker-images/master/local_builds/codebuild_build.sh
+wget https://raw.githubusercontent.com/aws/aws-codebuild-docker-images/
+master/local_builds/codebuild_build.sh
 chmod +x codebuild_build.sh
+
+docker pull public.ecr.aws/codebuild/local-builds:latest
 mkdir out
 ./codebuild_build.sh -i aws/codebuild/standard/5.0 -a out -b crud_lambda/infra
 
