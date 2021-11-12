@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "aws-csharp": {
+      "commandName": "Project",
+      "commandLineArgs": "debug"
+    },
+    "debugLambda": {
+      "commandName": "Executable",
+      "executablePath": "%USERPROFILE%\\.dotnet\\tools\\dotnet-lambda-test-tool-3.1.exe",
+      "commandLineArgs": "--port 5050",
+      "workingDirectory": ".\\bin\\$(Configuration)\\netcoreapp3.1"
+    }
+  }
+}

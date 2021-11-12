@@ -1,18 +1,21 @@
 service: tmpApi # NOTE: update this with your service name
+
 provider:
   name: aws
-  runtime: dotnetcore2.1
+  runtime: dotnetcore3.1
   stage: tmpApidev
-  region: us-east-2
+  region: us-east-1
+  lambdaHashingVersion: 20201221
+  
 package:
   individually: true
-  artifact: bin/release/netcoreapp2.1/hello.zip
+  artifact: bin/release/netcoreapp3.1/hello.zip
 functions:
   hello:
     handler: CsharpHandlers::CsharpHandlers.Functions.CreateWithDrawallHandler::Run
     events:
       - http:
           path: items
-          method: get    
+          method: get
     environment:
       variable2: value2

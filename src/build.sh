@@ -8,4 +8,5 @@ then
 fi
 
 dotnet restore
-dotnet lambda package --configuration release --framework netcoreapp2.1 --output-package bin/release/netcoreapp2.1/hello.zip
+cd crudSampleApi
+dotnet lambda package --configuration release --framework netcoreapp3.1 --output-package bin/release/netcoreapp3.1/hello.zip
