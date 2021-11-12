@@ -6,6 +6,7 @@
     <AssemblyName>CsharpHandlers</AssemblyName>
     <PackageId>aws-csharp</PackageId>
     <RootNamespace>CsharpHandlers</RootNamespace>
+    <UserSecretsId>c278d309-50a4-4ab4-a887-3328fdaeba5a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +17,8 @@
     <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="$(AmazonLambdaAPIGatewayEvents)" />
     <PackageReference Include="Amazon.Lambda.Core" Version="$(AmazonLambdaCore)" />
     <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="$(AmazonLambdaSerializationJson)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
